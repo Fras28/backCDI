@@ -377,7 +377,7 @@ export interface ApiComercioComercio extends Schema.CollectionType {
     comercio_id: Attribute.UID & Attribute.Required;
     nombre: Attribute.String & Attribute.Required;
     email: Attribute.Email & Attribute.Required;
-    telefono: Attribute.Integer;
+    telefono: Attribute.BigInteger;
     direccion: Attribute.String;
     items: Attribute.Relation<
       'api::comercio.comercio',

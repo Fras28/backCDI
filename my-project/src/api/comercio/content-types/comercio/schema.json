@@ -25,7 +25,7 @@
       "required": true
     },
     "telefono": {
-      "type": "integer"
+      "type": "biginteger"
     },
     "direccion": {
       "type": "string"
