@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "comercios",
+  "info": {
+    "singularName": "comercio",
+    "pluralName": "comercios",
+    "displayName": "Comercio",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "comercio_id": {
+      "type": "uid",
+      "required": true
+    },
+    "nombre": {
+      "type": "string",
+      "required": true
+    },
+    "email": {
+      "type": "email",
+      "required": true
+    },
+    "telefono": {
+      "type": "integer"
+    },
+    "direccion": {
+      "type": "string"
+    },
+    "items": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::item.item",
+      "mappedBy": "comercio"
+    }
+  }
+}
